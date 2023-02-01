@@ -139,19 +139,19 @@ public class Template_Report_Master_Detail implements Template {
 
     private void initStyle() {
         styleTitle = new Style();
-        styleTitle.setFont(DynamicReports.stl.font("Kh Bokor", true, false, 15)).setHorizontalAlignment(HorizontalAlignment.CENTER);
+        styleTitle.setFont(DynamicReports.stl.font().bold().setFontSize(15)).setHorizontalAlignment(HorizontalAlignment.CENTER).setPadding(5);
         stylePageHeader = new Style();
-        stylePageHeader.setFont(DynamicReports.stl.font("Kh Content", true, false, 10));
+        stylePageHeader.setFont(DynamicReports.stl.font().bold().setFontSize(10)).setPadding(2);
         styleColumnTitle = new Style();
-        styleColumnTitle.setBorder(DynamicReports.stl.pen(0.5f, LineStyle.SOLID)).setFont(DynamicReports.stl.font("Kh Content", true, false, 10)).setPadding(DynamicReports.stl.padding().setLeft(2).setRight(2)).setBackgroundColor(new Color(204, 206, 240));
+        styleColumnTitle.setBorder(DynamicReports.stl.pen(0.5f, LineStyle.SOLID)).setFont(DynamicReports.stl.font().bold().setFontSize(10)).setPadding(2).setBackgroundColor(new Color(204, 206, 240));
         styleColumn = new Style();
-        styleColumn.setBorder(DynamicReports.stl.pen(0.5f, LineStyle.SOLID)).setFont(DynamicReports.stl.font("Kh Content", true, false, 10)).setPadding(DynamicReports.stl.padding().setLeft(2).setRight(2));
+        styleColumn.setBorder(DynamicReports.stl.pen(0.5f, LineStyle.SOLID)).setFont(DynamicReports.stl.font().setFontSize(10)).setPadding(2);
         styleDetail = new Style();
-        styleDetail.setBorder(DynamicReports.stl.pen(0.5f, LineStyle.SOLID)).setFont(DynamicReports.stl.font("Kh Content", true, false, 10));
+        styleDetail.setBorder(DynamicReports.stl.pen(0.5f, LineStyle.SOLID)).setFont(DynamicReports.stl.font().setFontSize(10));
         stylePageFooter = new Style();
-        stylePageFooter.setFont(DynamicReports.stl.font("Kh Content", true, false, 10)).setHorizontalAlignment(HorizontalAlignment.RIGHT);
+        stylePageFooter.setFont(DynamicReports.stl.font().setFontSize(10)).setHorizontalAlignment(HorizontalAlignment.RIGHT).setPadding(2);
         styleSummary = new Style();
-        styleSummary.setFont(DynamicReports.stl.font("Kh Content", true, false, 10));
+        styleSummary.setFont(DynamicReports.stl.font().bold().setFontSize(10)).setPadding(2);
     }
 
     public StyleBuilder newStyle() {

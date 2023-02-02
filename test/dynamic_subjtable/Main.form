@@ -49,7 +49,7 @@
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace max="-2" attributes="0"/>
-              <Component id="jScrollPane1" pref="590" max="32767" attributes="0"/>
+              <Component id="jScrollPane1" pref="581" max="32767" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="103" alignment="0" groupAlignment="3" attributes="0">
@@ -57,11 +57,9 @@
                       <Component id="cmdPrint2" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="cmdPrint3" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="cmdPrint4" alignment="3" min="-2" max="-2" attributes="0"/>
-                  </Group>
-                  <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="cmdPrint" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="cmdSetupPage" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
+                  <Component id="cmdSetupPage" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
           </Group>
